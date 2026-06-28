@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Fresh Graduate Information Systems</title>
+    <meta name="description" content="Portofolio profesional seorang Fresh Graduate Information Systems yang berfokus pada Web Development.">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/">
+    <meta property="og:title" content="Portofolio | Web Developer Professional">
+    <meta property="og:description" content="Membangun solusi web modern dan sistem informasi berkualitas.">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Porto<span>folio.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-extra">
+                <button id="theme-toggle"><i class="fas fa-sun"></i></button>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container flex-row">
+            <div class="hero-content">
+                <h4 class="hero-subtitle">Halo, Nama Saya</h4>
+                <h1 class="hero-title">Bima Tazkiyatul 'Ulum</h1>
+                <h2 class="hero-typing">Saya seorang <span id="typed"></span></h2>
+                <p class="hero-desc">Web Developer yang memiliki minat dalam pengembangan website modern dan sistem informasi berbasis web.</p>
+                <div class="hero-btns">
+                    <a href="doc/resume.pdf" class="btn btn-primary">Download CV <i class="fas fa-download"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://wa.me/687816702512"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/bimabhem"><i class="fab fa-github"></i></a>
+                    <a href="mailto:bimatu47@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="img/profil.jpeg" alt="Profile Picture">
+                    <div class="blob-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">Tentang Saya</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="flex-row">
+                <div class="about-image">
+                    <div class="image-card glass">
+                        <img src="img/profil.jpeg" alt="About Me">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Lulusan Sistem Informasi</h3>
+                    <p>Saya merupakan lulusan Sistem Informasi yang memiliki minat besar dalam pengembangan aplikasi web dan sistem informasi. Saya memiliki pengalaman dalam membangun aplikasi berbasis website menggunakan HTML, CSS, JavaScript, PHP, CodeIgniter, Laravel, dan MySQL. Saya senang mempelajari teknologi baru serta memiliki kemampuan analisis kebutuhan sistem dan dokumentasi proyek.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card glass">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3 class="counter" data-target="4">0</h3>
+                            <p>Tahun Belajar</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3 class="counter" data-target="3">0</h3>
+                            <p>Proyek Website</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-user-graduate"></i>
+                            <p>Fresh Graduate</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-briefcase"></i>
+                            <p>Siap Bekerja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="skills-background">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="skills-header">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Can Do</span>
+                    <h2 class="title">Skill & Keahlian</h2>
+                    <p class="section-description">Teknologi dan tools yang saya gunakan untuk membangun website modern, responsif, dan mudah dikembangkan.</p>
+                </div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Frontend Development -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-gradient"></div>
+                        <div class="skill-card-content">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-laptop-code skill-icon"></i>
+                            </div>
+                            <h3 class="skill-title">Frontend Development</h3>
+                            <p class="skill-description">Membangun antarmuka website yang modern, responsif, interaktif, dan berfokus pada pengalaman pengguna menggunakan teknologi web terkini.</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge frontend-badge">HTML5</span>
+                                <span class="skill-badge frontend-badge">CSS3</span>
+                                <span class="skill-badge frontend-badge">JavaScript</span>
+                                <span class="skill-badge frontend-badge">React.js</span>
+                                <span class="skill-badge frontend-badge">Tailwind CSS</span>
+                                <span class="skill-badge frontend-badge">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-gradient"></div>
+                        <div class="skill-card-content">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-server skill-icon"></i>
+                            </div>
+                            <h3 class="skill-title">Backend Development</h3>
+                            <p class="skill-description">Mengembangkan logika bisnis, sistem backend, dan aplikasi web yang terstruktur menggunakan framework PHP.</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge backend-badge">PHP</span>
+                                <span class="skill-badge backend-badge">CodeIgniter 3</span>
+                                <span class="skill-badge backend-badge">Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-card" data-category="database">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-gradient"></div>
+                        <div class="skill-card-content">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-database skill-icon"></i>
+                            </div>
+                            <h3 class="skill-title">Database</h3>
+                            <p class="skill-description">Merancang, mengelola, dan mengoptimalkan database relasional agar aplikasi dapat berjalan secara efisien.</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge database-badge">MySQL</span>
+                                <span class="skill-badge database-badge">phpMyAdmin</span>
+                                <span class="skill-badge database-badge">Database Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Tools -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-gradient"></div>
+                        <div class="skill-card-content">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-toolbox skill-icon"></i>
+                            </div>
+                            <h3 class="skill-title">Development Tools</h3>
+                            <p class="skill-description">Menggunakan berbagai tools pendukung selama proses pengembangan website.</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge tools-badge">Visual Studio Code</span>
+                                <span class="skill-badge tools-badge">XAMPP</span>
+                                <span class="skill-badge tools-badge">Laragon</span>
+                                <span class="skill-badge tools-badge">Trae</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card" data-category="soft-skills">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-gradient"></div>
+                        <div class="skill-card-content">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-users skill-icon"></i>
+                            </div>
+                            <h3 class="skill-title">Soft Skills</h3>
+                            <p class="skill-description">Kemampuan interpersonal yang mendukung proses kerja secara individu maupun tim.</p>
+                            <div class="skill-badges">
+                                <span class="skill-badge soft-badge">Problem Solving</span>
+                                <span class="skill-badge soft-badge">Communication</span>
+                                <span class="skill-badge soft-badge">Teamwork</span>
+                                <span class="skill-badge soft-badge">Adaptability</span>
+                                <span class="skill-badge soft-badge">Analytical Thinking</span>
+                                <span class="skill-badge soft-badge">Time Management</span>
+                                <span class="skill-badge soft-badge">Fast Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience Timeline -->
+    <section class="timeline-section section-padding">
+        <div class="container flex-row">
+            <!-- Education -->
+            <div class="timeline-col">
+                <div class="section-header left">
+                    <h2 class="title">Pendidikan</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item glass">
+                        <div class="dot"></div>
+                        <div class="time">2021 - 2025</div>
+                        <h4>S1 Sistem Informasi</h4>
+                        <p>Universitas Amikom Yogyakarta</p>
+                        <p>3.6/4.0 (cumlaude)</p>
+                    </div>
+                    <div class="timeline-item glass">
+                        <div class="dot"></div>
+                        <div class="time">2018 - 2021</div>
+                        <h4>Rekayasa Perangkat Lunak</h4>
+                        <p>SMKN 1 Bantul</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Organization -->
+            <div class="timeline-col">
+                <div class="section-header left">
+                    <h2 class="title">Kegiatan & Organisasi</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item glass">
+                        <div class="dot"></div>
+                        <div class="time">2023 - 2024</div>
+                        <h4>Bendahara</h4>
+                        <p>UKM Taekwondo Amikom</p>
+                    </div>
+                    <div class="timeline-item glass">
+                        <div class="dot"></div>
+                        <div class="time">2023</div>
+                        <h4>Marshal</h4>
+                        <p>Jogja Marathon 2023</p>
+                    </div>
+                    <div class="timeline-item glass">
+                        <div class="dot"></div>
+                        <div class="time">2022</div>
+                        <h4>Humas Amikom Expo</h4>
+                        <p>Event Management</p>
+                    </div>
+                    <div class="timeline-item glass">
+                        <div class="dot"></div>
+                        <div class="time">2022 - 2023</div>
+                        <h4>Humas Amikom Expo</h4>
+                        <p>UKM Taekwondo Amikom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">Proyek Portofolio</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="design">UI Design</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item glass" data-category="web">
+                    <div class="project-img">
+                        <img src="img/web1.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-id="1">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistem Informasi Inventaris</h3>
+                        <p class="tech-stack">CodeIgniter 3, MySQL, Bootstrap</p>
+                        <p class="desc-short">Sistem inventaris untuk mengelola data barang, stok, dan laporan.</p>
+                        <div class="project-links">
+                            <a href="#" title="Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item glass" data-category="web">
+                    <div class="project-img">
+                        <img src="img/web2.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-id="2">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Website Profil Instansi</h3>
+                        <p class="tech-stack">Laravel, MySQL, Tailwind</p>
+                        <p class="desc-short">Website profil program studi TPPK Politeknik ATK Yogyakarta lengkap dengan berita, pengumuman, dan dashboard admin.</p>
+                        <div class="project-links">
+                            <a href="https://tppk.politeknikatk.ac.id/" title="Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item glass" data-category="design">
+                    <div class="project-img">
+                        <img src="img/web3.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-id="3">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Website Portofolio Pribadi</h3>
+                        <p class="tech-stack">HTML, CSS, JavaScript</p>
+                        <p class="desc-short">Website portofolio modern yang responsif dan interaktif.</p>
+                        <div class="project-links">
+                            <a href="#" title="Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section class="internship-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">Pengalaman Magang</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="intern-card glass">
+                <div class="intern-header">
+                    <div class="intern-title">
+                        <h3>Web Developer Intern</h3>
+                        <p>Politeknik ATK Yogyakarta</p>
+                    </div>
+                    <div class="intern-date">DES 2025 - JUNI 2026</div>
+                </div>
+                <div class="intern-body">
+                    <ul>
+                        <li>Merancang dan membangun website Program Studi TPPK Politeknik ATK Yogyakarta</li>
+                        <li>Melakukan pembuatan website menggunakan Laravel 12 dan Tailwind CSS</li>
+                        <li>Melakukan bug fixing dan optimasi performa website.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificate-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">Sertifikat</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="cert-slider glass">
+                <div class="cert-item">
+                    <img src="img/sertif1.jpg" alt="Certificate 1">
+                    <h4>Sertifikat Magang Web Developer</h4>
+                    <p>MagangHub Kemnaker - Programmer 2025/2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="skills-background">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="contact-header">
+                <div class="section-header">
+                    <span class="section-subtitle">Kontak</span>
+                    <h2 class="title">Hubungi Saya</h2>
+                    <div class="underline"></div>
+                    <p class="section-description">
+                        Terima kasih telah mengunjungi portofolio saya. Jangan ragu untuk menghubungi saya melalui salah satu platform berikut.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://wa.me/6287816702512" class="social-icon" data-tooltip="Phone">
+                    <div class="icon-circle">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </a>
+                
+                <a href="mailto:bimatu47@gmail.com" class="social-icon" data-tooltip="Email">
+                    <div class="icon-circle">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/bimabhem" class="social-icon" data-tooltip="GitHub" target="_blank" rel="noopener noreferrer">
+                    <div class="icon-circle">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/6287816702512" class="social-icon" data-tooltip="WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <div class="icon-circle">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Porto<span>folio.</span></h3>
+                <p>Terima kasih telah berkunjung. Mari berkolaborasi!</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bima Tazkiyatul 'Ulum. All Rights Reserved.</p>
+            </div>
+        </div>
+        <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <!-- Modal Project -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
